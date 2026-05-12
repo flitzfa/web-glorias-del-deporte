@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glorias del deporte, album de musica biografica por Juan Enriquez, Nico Segovia y Fabricio Enriquez.">
+  <title>Glorias del deporte | Música biográfica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Navegacion principal">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span>Glorias</span>
+    </a>
+    <nav>
+      <a href="#album">Álbum</a>
+      <a href="#canciones">Canciones</a>
+      <a href="#creditos">Créditos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero con slideshow automatico y contenido fijo superpuesto. -->
+    <section class="hero" aria-label="Presentacion del album">
+      <div class="hero-slider" aria-hidden="true">
+        <img class="hero-slide is-active" src="images/ailin-perez.png" alt="">
+        <img class="hero-slide" src="images/el-pato-fillol.png" alt="">
+        <img class="hero-slide" src="images/esteban-ribovics.jpeg" alt="">
+        <img class="hero-slide" src="images/francisco-prado.png" alt="">
+        <img class="hero-slide" src="images/gaby-sabatini.png" alt="">
+        <img class="hero-slide" src="images/ilia-topuria.png" alt="">
+        <img class="hero-slide" src="images/noche-ufc.png" alt="">
+        <img class="hero-slide" src="images/santiago-ponzinibbio.png" alt="">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">8 canciones originales</p>
+        <h1>Glorias del deporte</h1>
+        <p class="subtitle">Música biográfica</p>
+        <a class="primary-button" href="#canciones">Escuchar ahora</a>
+      </div>
+    </section>
+
+    <section id="album" class="section about-section">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Sobre el álbum</p>
+        <h2>Retratos sonoros de espíritu, historia y arena.</h2>
+      </div>
+      <p class="about-text reveal">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <!-- Las tarjetas de canciones se generan desde script.js para mantener una sola fuente de datos. -->
+    <section id="canciones" class="section tracks-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Canciones</p>
+        <h2>Singles del álbum</h2>
+      </div>
+      <div class="tracks-grid" id="tracksGrid" aria-label="Lista de canciones"></div>
+    </section>
+
+    <section id="creditos" class="section credits-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Créditos</p>
+        <h2>Integrantes del proyecto</h2>
+      </div>
+      <div class="credits-grid">
+        <article class="credit-card reveal">
+          <span>Autor / Compositor</span>
+          <h3>Juan Enriquez</h3>
+        </article>
+        <article class="credit-card reveal">
+          <span>Charango</span>
+          <h3>Nico Segovia</h3>
+        </article>
+        <article class="credit-card reveal">
+          <span>Voz</span>
+          <h3>Fabricio Enriquez</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Juan Enriquez</h2>
+        <div class="contact-links">
+          <a href="https://instagram.com/profe.vintage" target="_blank" rel="noopener noreferrer">Instagram @profe.vintage</a>
+          <a href="https://wa.me/541161667220" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="tel:+541161667220">+54 11 6166-7220</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Glorias del deporte · Música biográfica</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
