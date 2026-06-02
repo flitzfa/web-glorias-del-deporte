@@ -221,6 +221,14 @@ h2 {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
+.about-text p {
+  margin: 0 0 1.25rem 0;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
 /* Estilos de la nueva sección de Concepto */
 .concept-section {
   padding-top: 1.5rem;
@@ -228,7 +236,7 @@ h2 {
 
 .concept-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
