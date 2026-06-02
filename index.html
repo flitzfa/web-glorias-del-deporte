@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Glorias del deporte, album de musica biografica por Juan Enriquez, Nico Segovia y Fabricio Enriquez.">
+  <meta name="description" content="Glorias del deporte, álbum de música biográfica por Juan Enriquez, Nico Segovia y Fabricio Enriquez.">
   <title>Glorias del deporte | Música biográfica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght=500;600;700;800&family=Inter:wght=400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" aria-label="Navegacion principal">
+  <header class="site-header" aria-label="Navegación principal">
     <a class="brand" href="#inicio" aria-label="Ir al inicio">
-      <span>Glorias</span>
+      <span>Inicio</span>
     </a>
     <nav>
       <a href="#album">Álbum</a>
+      <a href="#concepto">Concepto</a>
       <a href="#canciones">Canciones</a>
       <a href="#creditos">Créditos</a>
       <a href="#contacto">Contacto</a>
@@ -24,8 +25,8 @@
   </header>
 
   <main id="inicio">
-    <!-- Hero con slideshow automatico y contenido fijo superpuesto. -->
-    <section class="hero" aria-label="Presentacion del album">
+    <!-- Hero con slideshow automático y contenido fijo superpuesto. -->
+    <section class="hero" aria-label="Presentación del álbum">
       <div class="hero-slider" aria-hidden="true">
         <img class="hero-slide is-active" src="images/ailin-perez.png" alt="">
         <img class="hero-slide" src="images/el-pato-fillol.png" alt="">
@@ -45,42 +46,79 @@
       </div>
     </section>
 
+    <!-- Sobre el álbum (Texto actualizado) -->
     <section id="album" class="section about-section">
       <div class="section-copy reveal">
         <p class="eyebrow">Sobre el álbum</p>
         <h2>Retratos sonoros de espíritu, historia y arena.</h2>
       </div>
       <p class="about-text reveal">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        El álbum se presenta como una colección de homenajes musicales dedicados a figuras del deporte, principalmente vinculadas a las artes marciales mixtas, aunque también incluye referentes históricos argentinos de disciplinas como el fútbol y el tenis. A través de una diversidad de estilos —que abarcan reggaetón, malambo, cuarteto, reggaetón-rock, rock-pop y rock—, cada composición construye el retrato de un atleta desde una perspectiva emocional, destacando tanto sus logros deportivos como los valores, sacrificios y experiencias que marcaron su trayectoria.
+
       </p>
     </section>
 
-    <!-- Las tarjetas de canciones se generan desde script.js para mantener una sola fuente de datos. -->
+    <!-- Nueva Sección: Concepto / Ejes temáticos -->
+    <section id="concepto" class="section concept-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Inspiración</p>
+        <h2>Los dos pilares del proyecto</h2>
+      </div>
+      <div class="concept-grid">
+        <article class="concept-card reveal">
+          <span class="concept-tag">El Universo MMA & UFC</span>
+          <h3>Intensidad y Combate</h3>
+          <p>
+            Marcado por la adrenalina del octágono, este eje rinde tributo a luchadores como Ailín Pérez, Esteban Ribovics, Francisco Prado, Ilia Topuria y Santiago Ponzinibbio. Las letras utilizan tecnicismos del combate para transmitir el sacrificio, el origen humilde y la mentalidad competitiva, complementado por la atmósfera de "Noche UFC", que retrata la pasión del público en estas veladas.
+          </p>
+        </article>
+        <article class="concept-card reveal">
+          <span class="concept-tag">Leyendas de Argentina</span>
+          <h3>Nostalgia y Orgullo</h3>
+          <p>
+            Representado por figuras icónicas de la historia deportiva nacional como "El Pato Fillol" y "Gaby Sabatini". Estos temas aportan una atmósfera más cálida, melódica y patriótica al disco, equilibrando la crudeza de los deportes de combate con melodías que apelan a la memoria colectiva y a la emoción de los hitos populares.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tarjetas de canciones (Con introducción añadida) -->
     <section id="canciones" class="section tracks-section">
       <div class="section-heading reveal">
         <p class="eyebrow">Canciones</p>
         <h2>Singles del álbum</h2>
+        <p class="section-intro">
+          Cada pista adapta su instrumentación y ritmo a la personalidad y origen de la figura homenajeada: desde bases urbanas y directas para los atletas de combate, hasta arreglos de rock vibrante y matices tradicionales para nuestros referentes históricos.
+        </p>
       </div>
       <div class="tracks-grid" id="tracksGrid" aria-label="Lista de canciones"></div>
     </section>
 
-    <section id="creditos" class="section credits-section">
+<section id="creditos" class="section credits-section">
       <div class="section-heading reveal">
         <p class="eyebrow">Créditos</p>
         <h2>Integrantes del proyecto</h2>
       </div>
       <div class="credits-grid">
         <article class="credit-card reveal">
-          <span>Autor / Compositor</span>
+          <span>Autor / Compositor / Guitarra</span>
           <h3>Juan Enriquez</h3>
         </article>
         <article class="credit-card reveal">
-          <span>Charango</span>
+          <span>Charango y ronroco</span>
           <h3>Nico Segovia</h3>
         </article>
         <article class="credit-card reveal">
           <span>Voz</span>
           <h3>Fabricio Enriquez</h3>
+        </article>
+        <article class="credit-card reveal">
+          <span>Teclados</span>
+          <h3>Mauro Díaz</h3>
+        </article>
+        <article class="credit-card reveal">
+          <span>Bajos</span>
+          <h3>Walter Zelaya</h3>
         </article>
       </div>
     </section>
@@ -90,7 +128,7 @@
         <p class="eyebrow">Contacto</p>
         <h2>Juan Enriquez</h2>
         <div class="contact-links">
-          <a href="https://instagram.com/profe.vintage" target="_blank" rel="noopener noreferrer">Instagram @profe.vintage</a>
+          <a href="https://instagram.com/profe.vintage" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://wa.me/541161667220" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="tel:+541161667220">+54 11 6166-7220</a>
         </div>
